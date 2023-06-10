@@ -21,11 +21,12 @@ class Program
         else 
             letter = "F";
 
-        if (letter == "A" || letter == "B" || letter == "C")
-            Console.Write("Congratulations! You passed the course! ");
-        else
-            Console.Write("Unfortunately you did not pass the class. Better luck next term! ");
+        Console.Write($"Your letter grade was {letter}. ");
 
-        Console.Write($"Your letter grade was {letter}.");
+        if (letter == "A" || letter == "B" || letter == "C")
+            Console.Write("Congratulations! You passed the course!");
+        else
+            Console.Write("Unfortunately you did not pass the class. Better luck next term!");
+
     }
 }
